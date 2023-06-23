@@ -1,0 +1,113 @@
+﻿body {
+  margin: 0;
+  min-height: 100vh;
+}
+body .container {
+  margin-left: 200px;
+  margin-right: 200px;
+}
+body .text-top {
+  margin-left: 20px;
+  font-family: Arial;
+  font-weight: bold;
+}
+body .text-top .text-productx {
+  color: grey;
+}
+body .text-top .text-platform {
+  color: rgb(255, 105, 55);
+}
+body .btn {
+  border-color: transparent;
+}
+body .btn-outline-primary {
+  color: rgb(255, 105, 55);
+}
+body .btn-outline-primary:hover {
+  background-color: transparent;
+  border-color: rgb(255, 105, 55);
+  color: rgb(255, 105, 55);
+}
+body .btn-primary {
+  background-color: rgb(255, 105, 55);
+}
+body .btn-primary:hover {
+  background-color: rgb(240, 98, 55);
+  border-color: transparent;
+}
+
+main {
+  display: flex;
+}
+
+.home-index {
+  display: inline-block;
+}
+.home-index .text-orange {
+  color: rgb(255, 105, 55);
+}
+.home-index .card {
+  margin-top: 20px;
+}
+.home-index .card .card-header {
+  padding: 10px 20px 10px 20px;
+  background-color: rgb(33, 56, 72);
+  color: lightgrey;
+  border-radius: 3px 3px 3px 3px;
+}
+.home-index .card .card-body {
+  padding-left: 10px;
+}
+.home-index .btn-outline-secondary {
+  color: lightgrey;
+}
+.home-index .btn-search {
+  background-color: white;
+  color: black;
+  border-left-width: 1px;
+  border-left-color: black;
+}
+.home-index .no-image-sub {
+  width: 80px;
+  height: 80px;
+  background-color: lightgrey;
+  border: solid 1px darkgrey;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.card-footer {
+  background-color: rgb(33, 56, 72);
+  display: flex;
+  padding: 0;
+}
+.card-footer .container {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.card-footer .container .text-top {
+  margin-left: 0px;
+}
+.card-footer .container .text-top .text-productx {
+  color: white;
+}
+.card-footer .container .footer-text {
+  color: lightgray;
+  font-size: 14px;
+}
+.card-footer .container .join-product {
+  width: 200px;
+  padding-top: 3px;
+}
+
+footer {
+  background-color: rgb(24, 44, 58);
+  color: lightgray;
+}
+footer .container {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 12px;
+}

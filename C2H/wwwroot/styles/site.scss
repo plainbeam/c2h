@@ -1,0 +1,139 @@
+﻿$orangebrand: rgba(255,105,55,255);
+$orangebrand-darker: rgba(240, 98, 55);
+$background: rgba(33,56,72,255);
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    .container {
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+
+    .text-top {
+        margin-left: 20px;
+        font-family: Arial;
+        font-weight: bold;
+
+        .text-productx {
+            color: grey;
+        }
+
+        .text-platform {
+            color: $orangebrand;
+        }
+    }
+
+    .btn {
+        border-color: transparent;
+    }
+
+    .btn-outline-primary {
+        color: $orangebrand;
+
+
+        &:hover {
+            background-color: transparent;
+            border-color: $orangebrand;
+            color: $orangebrand;
+        }
+    }
+
+    .btn-primary {
+        background-color: $orangebrand;
+
+        &:hover {
+            background-color: $orangebrand-darker;
+            border-color: transparent;
+        }
+    }
+}
+
+main{
+    display: flex;
+}
+.home-index {
+    display: inline-block;
+
+    .text-orange {
+        color: $orangebrand;
+    }
+
+    .card {
+        margin-top: 20px;
+
+        .card-header {
+            padding: 10px 20px 10px 20px;
+            background-color: $background;
+            color: lightgrey;
+            border-radius: 3px 3px 3px 3px;
+        }
+
+        .card-body {
+            padding-left: 10px;
+        }
+    }
+
+    .btn-outline-secondary {
+        color: lightgrey;
+    }
+
+    .btn-search {
+        background-color: white;
+        color: black;
+        border-left-width: 1px;
+        border-left-color: black;
+    }
+
+    .no-image-sub {
+        width: 80px;
+        height: 80px;
+        background-color: lightgrey;
+        border: solid 1px darkgrey;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+    }
+}
+
+.card-footer {
+    background-color: $background;
+    display: flex;
+    padding: 0;
+
+    .container {
+        margin-top: 30px;
+        margin-bottom: 50px;
+
+        .text-top {
+            margin-left: 0px;
+
+            .text-productx {
+                color: white;
+            }
+        }
+
+        .footer-text {
+            color: lightgray;
+            font-size: 14px;
+        }
+
+        .join-product {
+            width: 200px;
+            padding-top: 3px;
+        }
+    }
+}
+
+footer {
+    background-color: rgba(24,44,58,255);
+    color: lightgray;
+
+    .container {
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        font-size: 12px;
+    }
+}

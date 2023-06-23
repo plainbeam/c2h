@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - C2H</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/styles/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <i class="fa fa-bars"></i>
+                        </li>
+                        <li class="nav-item text-top">
+                            <span class="text-productx">PRODUCTX</span><span class="text-platform">PLATFORM</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="float-end">
+                    <button class="btn btn-outline-primary">LOGIN</button>
+                    <button class="btn btn-primary">SIGN UP</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div>
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <div class="card-footer">
+        <div class="container">
+            <div class="row" style="margin-bottom: 10px;">
+                <div class="col-md-6 float-start text-top">
+                    <span class="text-productx">PRODUCTX</span><span class="text-platform">PLATFORM</span>
+                </div>
+                <div class="col-md-6">
+                    <span class="float-end footer-text">Follow us on our social media accounts.</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <span class="float-start footer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+                </div>
+                <div class="col-md-9 float-end text-top">
+                    <button class="btn btn-primary float-end join-product">JOIN PRODUCTX</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer text-muted">
+        <div class="container">
+            &copy;2023 PRODUCTX PLATFORM. All rights reserved.
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
