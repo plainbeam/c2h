@@ -1,7 +1,13 @@
+using C2H.Data.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddMvc();
+builder.Services.AddRazorPages();
+
+builder.Services.AddScoped<IProductService, ProductService>();
 
 var app = builder.Build();
 

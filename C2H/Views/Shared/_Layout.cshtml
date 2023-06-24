@@ -63,6 +63,37 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".btn-letter-filter").click(function () {
+                var data = $(this).attr("data-btn");
+                $("#spinner").show();
+                $.ajax({
+                    url: "/Home/FilterByLetter?data=" + encodeURIComponent(data),
+                    method: "GET",
+                    success: function (result) {
+                        $("#partialContainer").html(result);
+                        $("#spinner").hide();
+                    }
+                });
+            });
+
+            $("#search").click(function () {
+                var data = $("#searchText").val();
+                $("#spinner").show();
+                $.ajax({
+                    url: "/Home/Search?data=" + encodeURIComponent(data),
+                    method: "GET",
+                    success: function (result) {
+                        $("#partialContainer").html(result);
+                        $("#spinner").hide();
+                    }
+                });
+            });
+        });
+    </script>
+
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

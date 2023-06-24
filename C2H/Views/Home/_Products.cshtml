@@ -1,0 +1,31 @@
+﻿@model IEnumerable<Product>
+@using C2H.ViewModels
+@using System.Linq
+
+@if (Model.Count() > 0)
+{
+    @foreach (Product data in Model)
+    {
+        <div class="col-md-4 float-start">
+            <div class="card mb-3 product-card border-0" style="max-width: 540px;">
+                <div class="row g-0 align-items-center">
+                    <div class="col-md-3 h-100 d-flex">
+                        @{
+                            var words = @data.Name.Split(' ');
+                            var initial = char.ToUpper(words[0][0]);
+                            var second = char.ToUpper(words[1][0]);
+                        }
+                        <div class="no-image-sub d-flex justify-content-center align-items-center">@initial @second</div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body justify-content-left">
+                            <h5 class="card-title">@data.Name</h5>
+                            <p class="card-text"><small class="text-orange">Buy product</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+}
+

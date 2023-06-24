@@ -20,5 +20,9 @@
   <ItemGroup>
     <None Include="compilerconfig.json" />
   </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\C2H.Data\C2H.Data.csproj" />
+  </ItemGroup>
 	
 </Project>
